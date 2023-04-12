@@ -44,6 +44,8 @@
 		3F4149C929E721C00093122E /* DrawingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4149CD29E721C00093122E /* DrawingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITests.swift; sourceTree = "<group>"; };
 		3F4149CF29E721C00093122E /* DrawingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3F4149DC29E721F10093122E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3F4149DE29E722010093122E /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,8 @@
 		3F4149A629E721BC0093122E = {
 			isa = PBXGroup;
 			children = (
+				3F4149DD29E721F60093122E /* _docs */,
+				3F4149DC29E721F10093122E /* README.md */,
 				3F4149B129E721BD0093122E /* Drawing */,
 				3F4149C229E721BF0093122E /* DrawingTests */,
 				3F4149CC29E721C00093122E /* DrawingUITests */,
@@ -125,6 +129,14 @@
 				3F4149CF29E721C00093122E /* DrawingUITestsLaunchTests.swift */,
 			);
 			path = DrawingUITests;
+			sourceTree = "<group>";
+		};
+		3F4149DD29E721F60093122E /* _docs */ = {
+			isa = PBXGroup;
+			children = (
+				3F4149DE29E722010093122E /* rfer.md */,
+			);
+			path = _docs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
