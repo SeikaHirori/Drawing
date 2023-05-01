@@ -10,7 +10,11 @@ import SwiftUI
 struct impl_Part1dot2: View {
     var body: some View {
         return VStack {
-            Text("Hello, World!")
+            Text("Hello, World :3")
+            
+            Triangle()
+                .fill(Color.red)
+                .frame(width: 300, height: 300)
         }
     }
 }
