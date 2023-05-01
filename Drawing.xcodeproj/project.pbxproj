@@ -14,7 +14,8 @@
 		3F4149C429E721BF0093122E /* DrawingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4149C329E721BF0093122E /* DrawingTests.swift */; };
 		3F4149CE29E721C00093122E /* DrawingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4149CD29E721C00093122E /* DrawingUITests.swift */; };
 		3F4149D029E721C00093122E /* DrawingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F4149CF29E721C00093122E /* DrawingUITestsLaunchTests.swift */; };
-		3FF35F692A0060E500EC32C2 /* impl_Part1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF35F682A0060E500EC32C2 /* impl_Part1.swift */; };
+		3FF35F692A0060E500EC32C2 /* impl_Part1dot1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF35F682A0060E500EC32C2 /* impl_Part1dot1.swift */; };
+		3FF35F6B2A00645100EC32C2 /* impl_Part1dot2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF35F6A2A00645100EC32C2 /* impl_Part1dot2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,8 @@
 		3F4149CF29E721C00093122E /* DrawingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3F4149DC29E721F10093122E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3F4149DE29E722010093122E /* rfer.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = rfer.md; sourceTree = "<group>"; };
-		3FF35F682A0060E500EC32C2 /* impl_Part1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = impl_Part1.swift; sourceTree = "<group>"; };
+		3FF35F682A0060E500EC32C2 /* impl_Part1dot1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = impl_Part1dot1.swift; sourceTree = "<group>"; };
+		3FF35F6A2A00645100EC32C2 /* impl_Part1dot2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = impl_Part1dot2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +147,8 @@
 		3FF35F672A0060E500EC32C2 /* part1 */ = {
 			isa = PBXGroup;
 			children = (
-				3FF35F682A0060E500EC32C2 /* impl_Part1.swift */,
+				3FF35F682A0060E500EC32C2 /* impl_Part1dot1.swift */,
+				3FF35F6A2A00645100EC32C2 /* impl_Part1dot2.swift */,
 			);
 			name = part1;
 			path = Drawing/part1;
@@ -282,7 +285,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F4149B529E721BD0093122E /* ContentView.swift in Sources */,
-				3FF35F692A0060E500EC32C2 /* impl_Part1.swift in Sources */,
+				3FF35F6B2A00645100EC32C2 /* impl_Part1dot2.swift in Sources */,
+				3FF35F692A0060E500EC32C2 /* impl_Part1dot1.swift in Sources */,
 				3F4149B329E721BD0093122E /* DrawingApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
