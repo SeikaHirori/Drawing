@@ -16,6 +16,7 @@ struct impl_Part1: View {
                 path.addLine(to: CGPoint(x: 100, y: 300))
                 path.addLine(to: CGPoint(x: 300, y: 300))
                 path.addLine(to: CGPoint(x: 200, y: 100))
+                path.closeSubpath()
             }
 //            .fill(Color.blue)
             .stroke(.blue, lineWidth: 10)
