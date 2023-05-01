@@ -14,7 +14,7 @@ struct impl_Part1dot2: View {
             
             Spacer()
             
-            ArcV1(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true)
+            ArcV2(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true)
                 .stroke(.blue, lineWidth: 10)
                 .frame(width: 300, height: 300)
             
@@ -58,4 +58,23 @@ struct ArcV1:Shape {
         
         return path
     }
+}
+
+struct ArcV2: Shape {
+    var startAngle: Angle
+    var endAngle: Angle
+    var clockwise: Bool
+    
+    func path(in rect: CGRect) -> Path {
+        let rotationAdjustment: Angle = Angle.degrees(90)
+        let modifiedStart:Angle = startAngle - rotationAdjustment
+        let modifiedEnd:Angle = endAngle - rotationAdjustment
+        
+        var path:Path = Path()
+        
+        path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width / 2, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: clockwise)
+        
+        return path
+    }
+    
 }
