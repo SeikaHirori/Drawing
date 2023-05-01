@@ -14,7 +14,7 @@ struct impl_Part1dot2: View {
             
             Spacer()
             
-            Arc(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true)
+            ArcV1(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true)
                 .stroke(.blue, lineWidth: 10)
                 .frame(width: 300, height: 300)
             
@@ -46,7 +46,7 @@ struct Triangle: Shape {
     }
 }
 
-struct Arc:Shape {
+struct ArcV1:Shape {
     var startAngle: Angle
     var endAngle: Angle
     var clockwise: Bool
