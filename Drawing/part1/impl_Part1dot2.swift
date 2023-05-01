@@ -12,8 +12,11 @@ struct impl_Part1dot2: View {
         return VStack {
             Text("Hello, World :3")
             
+            Spacer()
+            
             Triangle()
-                .fill(Color.red)
+//                .fill(Color.red)
+                .stroke(Color.red, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
                 .frame(width: 300, height: 300)
         }
     }
