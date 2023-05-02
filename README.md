@@ -12,6 +12,6 @@ ___
 
 - [x] 1. Drawing: Introduction
 - [x] 2. Creating custom paths with SwiftUI
-- [ ] 3. Paths vs shapes in SwiftUI
+- [x] 3. Paths vs shapes in SwiftUI
 - [ ] 4. Adding strokeBorder() support with InsettableShape
 
