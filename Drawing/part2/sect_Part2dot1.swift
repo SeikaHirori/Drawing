@@ -19,16 +19,36 @@ struct sect_Part2dot1: View {
 //
             
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-                .fill(.red)
+                .fill(.red, style: FillStyle(eoFill: true))
 
-            
-            Text("Offset")
+            HStack {
+                Text("Offset")
+                
+                // Debug
+                Text("|")
+                Text(petalOffset.formatted())
+            }
             Slider(value: $petalOffset, in: -40...40)
                 .padding([.horizontal, .bottom])
+//            // Debug
+//            .onChange(of: petalOffset) { _ in
+//                print("Petal Offset: \(petalOffset)")
+//            }
             
-            Text("Width")
+            HStack {
+                Text("Width")
+
+                // Debug
+                Text("|")
+                Text(petalWidth.formatted())
+            }
             Slider(value: $petalWidth, in: 0...100)
                 .padding(.horizontal)
+                
+//                // Debug
+//                .onChange(of: petalWidth) { _ in
+//                    print("Petal Width: \(petalWidth)")
+//                }
             
             Button(action: resetToDefault) {
                 Text("Reset")
