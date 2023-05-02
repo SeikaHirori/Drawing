@@ -1,5 +1,5 @@
 //
-//  impl_Part1dot2.swift
+//  impl_Part1.swift
 //  Drawing
 //
 //  Created by Seika Hirori on 5/1/23.
@@ -7,74 +7,24 @@
 
 import SwiftUI
 
-struct impl_Part1dot2: View {
+struct impl_Part1: View {
     var body: some View {
+
         return VStack {
-            Text("Hello world :3")
-            
-            Spacer()
-            
-            ArcV2(startAngle: .degrees(0), endAngle: .degrees(110), clockwise: true)
-                .stroke(.blue, lineWidth: 10)
-                .frame(width: 300, height: 300)
-            
-//            Triangle()
-////                .fill(Color.red)
-//                .stroke(Color.red, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
-//                .frame(width: 300, height: 300)
+            Path { path in
+                path.move(to: CGPoint(x: 200, y: 100))
+                path.addLine(to: CGPoint(x: 100, y: 300))
+                path.addLine(to: CGPoint(x: 300, y: 300))
+                path.addLine(to: CGPoint(x: 200, y: 100))
+            }
+//            .fill(Color.blue)
+            .stroke(.blue, style: StrokeStyle(lineWidth: 10, lineCap: .round, lineJoin: .round))
         }
     }
 }
 
-struct impl_Part1dot2_Previews: PreviewProvider {
+struct impl_Part1_Previews: PreviewProvider {
     static var previews: some View {
-        impl_Part1dot2()
+        impl_Part1()
     }
-}
-
-struct Triangle: Shape {
-    func path(in rect: CGRect) -> Path {
-        var path = Path()
-        
-        path.move(to: CGPoint(x: rect.midX, y: rect.minY))
-        path.addLine(to: CGPoint(x: rect.minX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.maxX, y: rect.maxY))
-        path.addLine(to: CGPoint(x: rect.midX, y: rect.minY))
-        
-        
-        return path
-    }
-}
-
-struct ArcV1:Shape {
-    var startAngle: Angle
-    var endAngle: Angle
-    var clockwise: Bool
-    
-    func path(in rect: CGRect) -> Path {
-        var path:Path = Path()
-        
-        path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width / 2, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
-        
-        return path
-    }
-}
-
-struct ArcV2: Shape {
-    var startAngle: Angle
-    var endAngle: Angle
-    var clockwise: Bool
-    
-    func path(in rect: CGRect) -> Path {
-        let rotationAdjustment: Angle = Angle.degrees(90)
-        let modifiedStart:Angle = startAngle - rotationAdjustment
-        let modifiedEnd:Angle = endAngle - rotationAdjustment
-        
-        var path:Path = Path()
-        
-        path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width / 2, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: !clockwise)
-        
-        return path
-    }
-    
 }
