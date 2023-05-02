@@ -14,8 +14,13 @@ struct sect_Part2dot1: View {
     
     var body: some View {
         return VStack {
+//            Flower(petalOffset: petalOffset, petalWidth: petalWidth)
+//                .stroke(.red, lineWidth: 1)
+//
+            
             Flower(petalOffset: petalOffset, petalWidth: petalWidth)
-                .stroke(.red, lineWidth: 1)
+                .fill(.red)
+
             
             Text("Offset")
             Slider(value: $petalOffset, in: -40...40)
