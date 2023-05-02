@@ -9,7 +9,9 @@ import SwiftUI
 
 struct impl_Part1dot4: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        return VStack {
+            Circle().stroke(.blue, lineWidth: 45)
+        }
     }
 }
 
