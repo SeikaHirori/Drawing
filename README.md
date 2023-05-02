@@ -15,3 +15,10 @@ ___
 - [x] 3. Paths vs shapes in SwiftUI
 - [x] 4. Adding strokeBorder() support with InsettableShape
 
+## Part 2
+### (https://www.hackingwithswift.com/100/swiftui/44)[https://www.hackingwithswift.com/100/swiftui/44]
+
+- [] 1. Transforming shapes using CGAffineTransform and even-odd fills
+- [] 2. Creative borders and fills using ImagePaint
+- [] 3. Enabling high-performance Metal rendering with drawingGroup()
+
