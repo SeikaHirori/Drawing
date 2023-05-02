@@ -10,7 +10,9 @@ import SwiftUI
 struct impl_Part1dot4: View {
     var body: some View {
         return VStack {
-            Circle().stroke(.blue, lineWidth: 45)
+            Circle()
+//                .stroke(.blue, lineWidth: 45)
+                .strokeBorder(.blue, lineWidth: 40)
         }
     }
 }
