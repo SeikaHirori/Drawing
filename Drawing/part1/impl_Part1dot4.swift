@@ -22,3 +22,20 @@ struct impl_Part1dot4_Previews: PreviewProvider {
         impl_Part1dot4()
     }
 }
+
+struct Arc:Shape {
+    var startAngle: Angle
+    var endAngle: Angle
+    var clockwise: Bool
+    
+    func path(in rect: CGRect) -> Path {
+        let rotationAdjustment:Angle = Angle.degrees(90)
+        let modifiedStart:Angle = startAngle - rotationAdjustment
+        let modifiedEnd: Angle = endAngle - rotationAdjustment
+        
+        var path:Path = Path()
+        path.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rect.width / 2, startAngle: modifiedStart, endAngle: modifiedEnd, clockwise: !clockwise)
+        
+    }
+    
+}
