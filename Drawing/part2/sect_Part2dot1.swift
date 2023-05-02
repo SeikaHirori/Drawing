@@ -8,11 +8,37 @@
 import SwiftUI
 
 struct sect_Part2dot1: View {
+    @State private var petalOffset:Double = -20.0
+    @State private var petalWidth: Double = 100.0
+    
+    
     var body: some View {
         return VStack {
-            Flower()
+            Flower(petalOffset: petalOffset, petalWidth: petalWidth)
+                .stroke(.red, lineWidth: 1)
+            
+            Text("Offset")
+            Slider(value: $petalOffset, in: -40...40)
+                .padding([.horizontal, .bottom])
+            
+            Text("Width")
+            Slider(value: $petalWidth, in: 0...100)
+                .padding(.horizontal)
+            
+            Button(action: resetToDefault) {
+                Text("Reset")
+            }
+            .padding()
+            
+            
         }
     }
+    
+    func resetToDefault() -> Void {
+        petalOffset = -20.0
+        petalWidth = 100.0
+    }
+    
 }
 
 struct sect_Part2dot1_Previews: PreviewProvider {
