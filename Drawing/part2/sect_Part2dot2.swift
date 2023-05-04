@@ -48,10 +48,15 @@ struct sect_Part2dot2: View {
 //                        .padding()
 //                        .padding()
                     
-                    // Using ImagePaint
+//                    // Using ImagePaint
+//                    Text("Hello worldddd :3")
+//                        .frame(width: 300, height: 300)
+//                        .border(ImagePaint(image: Image("Sunny_green_paddy_fields_with_trees_and_long_shadows_at_golden_hour"),scale: 0.1), width: 30)
+                    
+                    // Using ImagePaint with sourceRect
                     Text("Hello worldddd :3")
                         .frame(width: 300, height: 300)
-                        .border(ImagePaint(image: Image("Sunny_green_paddy_fields_with_trees_and_long_shadows_at_golden_hour"),scale: 0.1), width: 30)  
+                        .border(ImagePaint(image: Image("Sunny_green_paddy_fields_with_trees_and_long_shadows_at_golden_hour"), sourceRect: CGRect(x: 0, y: 0.25, width: 1, height: 0.5),scale: 0.1), width: 30)
                 }
                 .frame(width: outerGeoWidth * 0.90, height: outerGeoHeight * 0.90)
                 .padding()
