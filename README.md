@@ -19,6 +19,6 @@ ___
 ### (https://www.hackingwithswift.com/100/swiftui/44)[https://www.hackingwithswift.com/100/swiftui/44]
 
 - [x] 1. Transforming shapes using CGAffineTransform and even-odd fills
-- [] 2. Creative borders and fills using ImagePaint
+- [x] 2. Creative borders and fills using ImagePaint
 - [] 3. Enabling high-performance Metal rendering with drawingGroup()
 
