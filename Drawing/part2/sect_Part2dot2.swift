@@ -22,9 +22,29 @@ struct sect_Part2dot2: View {
             Text("hello world :3")
                 .frame(width: 300, height: 300)
                 .border(.red, width: 30)
+                .padding()
+            
+            // Use image for background
+            Text("hello world :3")
+                .frame(width: 300, height: 300)
+                .foregroundColor(.white)
+                .background(
+                    GeometryReader { geo in
+                        let geoWidth = geo.size.width
+                        let geoHeight = geo.size.height
+                        
+                        Image("pexels-pixabay-68474")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: geoWidth * 0.8, height: geoHeight * 0.8)
+                            .frame(width: geoWidth, height: geoHeight)
+                    }
+                )
+                .background(.blue)
+                .padding()
+
         }
-        
-        
+        .padding()
     }
 }
 
