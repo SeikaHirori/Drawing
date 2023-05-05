@@ -17,6 +17,8 @@ struct sect_Part2dot3: View {
             
             Slider(value: $colorCycle)
                 .padding()
+            
+                // DEBUG
                 .onChange(of: colorCycle) { _ in
                     print(colorCycle.formatted())
                 }
