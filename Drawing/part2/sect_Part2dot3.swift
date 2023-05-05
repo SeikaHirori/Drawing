@@ -17,7 +17,6 @@ struct sect_Part2dot3: View {
             
             Slider(value: $colorCycle)
                 .padding()
-            
                 // DEBUG
                 .onChange(of: colorCycle) { _ in
                     print(colorCycle.formatted())
@@ -41,7 +40,22 @@ struct ColorCyclingCircle: View {
             ForEach(0..<steps) { value in
                 Circle()
                     .inset(by: Double(value))
-                    .strokeBorder(color(for: value, brightness: 1), lineWidth: 2)
+                
+//                // v1
+//                    .strokeBorder(color(for: value, brightness: 1), lineWidth: 2)
+                
+                // v2
+                    .strokeBorder(
+                        LinearGradient(
+                            gradient: Gradient(colors: [
+                                color(for: value, brightness: 1),
+                                color(for: value, brightness: 0.5)
+                            ]),
+                            startPoint: .top,
+                            endPoint: .bottom
+                        ),
+                        lineWidth: 2
+                    )
             }
         }
     }
