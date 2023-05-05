@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct sect_Part2dot3: View {
+    @State private var colorCycle = 0.0
+    
     var body: some View {
         return VStack {
-            ColorCyclingCircle()
+            ColorCyclingCircle(amount: colorCycle)
+                .frame(width: 300, height: 300)
+            
+            Slider(value: $colorCycle)
+                .padding()
+                .onChange(of: colorCycle) { _ in
+                    print(colorCycle.formatted())
+                }
         }
     }
 }
