@@ -58,6 +58,7 @@ struct ColorCyclingCircle: View {
                     )
             }
         }
+        .drawingGroup() // rfer #1
     }
     
     func color(for value: Int, brightness: Double) -> Color {
