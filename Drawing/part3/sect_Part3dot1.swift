@@ -10,8 +10,7 @@ import SwiftUI
 struct sect_Part3dot1: View {
     var body: some View {
         return VStack {
-            RedRectangle_v2_shortCut()
-            
+            BrighterStuff_v1()
         }
     }
 }
@@ -48,6 +47,17 @@ struct RedRectangle_v2_shortCut: View {
                 .scaledToFit()
                 .colorMultiply(.red)
             
+        }
+    }
+}
+
+struct BrighterStuff_v1: View {
+    var body: some View {
+        return VStack {
+            ZStack {
+                Text("hello world")
+            }
+            .frame(width: 300, height: 300)
         }
     }
 }
