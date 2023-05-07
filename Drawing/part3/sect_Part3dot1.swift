@@ -10,7 +10,7 @@ import SwiftUI
 struct sect_Part3dot1: View {
     var body: some View {
         return VStack {
-            RedRectangle_v1_image_modified()
+            RedRectangle_v2_shortCut()
             
         }
     }
@@ -37,5 +37,17 @@ struct RedRectangle_v1_image_modified: View {
         }
         .frame(width: 400, height: 500)
         .clipped()
+    }
+}
+
+struct RedRectangle_v2_shortCut: View {
+    var body: some View {
+        return VStack {
+            Image("pexels-pixabay-68474")
+                .resizable()
+                .scaledToFit()
+                .colorMultiply(.red)
+            
+        }
     }
 }
