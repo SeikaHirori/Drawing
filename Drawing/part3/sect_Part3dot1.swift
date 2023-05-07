@@ -10,7 +10,7 @@ import SwiftUI
 struct sect_Part3dot1: View {
     var body: some View {
         return VStack {
-            Zstacked_image_modified()
+            RedRectangle_image_modified()
             
         }
     }
@@ -22,7 +22,7 @@ struct sect_Part3dot1_Previews: PreviewProvider {
     }
 }
 
-struct Zstacked_image_modified: View {
+struct RedRectangle_v1_image_modified: View {
     var body: some View {
         return ZStack {
             
