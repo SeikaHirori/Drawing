@@ -10,7 +10,7 @@ import SwiftUI
 struct sect_Part3dot1: View {
     var body: some View {
         return VStack {
-            RedRectangle_image_modified()
+            RedRectangle_v1_image_modified()
             
         }
     }
