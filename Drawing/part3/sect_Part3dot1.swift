@@ -9,6 +9,21 @@ import SwiftUI
 
 struct sect_Part3dot1: View {
     var body: some View {
+        return VStack {
+            Zstacked_image_modified()
+            
+        }
+    }
+}
+
+struct sect_Part3dot1_Previews: PreviewProvider {
+    static var previews: some View {
+        sect_Part3dot1()
+    }
+}
+
+struct Zstacked_image_modified: View {
+    var body: some View {
         return ZStack {
             
             Image("pexels-pixabay-68474")
@@ -22,13 +37,5 @@ struct sect_Part3dot1: View {
         }
         .frame(width: 400, height: 500)
         .clipped()
-        
-        
-    }
-}
-
-struct sect_Part3dot1_Previews: PreviewProvider {
-    static var previews: some View {
-        sect_Part3dot1()
     }
 }
