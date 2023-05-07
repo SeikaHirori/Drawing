@@ -10,8 +10,8 @@ import SwiftUI
 struct sect_Part3dot1: View {
     var body: some View {
         return ZStack {
-            Image("262355")
-                // Personal modifiers
+            
+            Image("pexels-pixabay-68474")
                 .resizable()
                 .scaledToFit()
             
