@@ -10,7 +10,7 @@ import SwiftUI
 struct sect_Part3dot1: View {
     var body: some View {
         return VStack {
-            BrighterStuff_v2()
+            Blur_and_Saturation_v1()
         }
     }
 }
@@ -132,4 +132,23 @@ struct BrighterStuff_v2: View {
         .ignoresSafeArea()
             
     }
+}
+
+struct Blur_and_Saturation_v1:View {
+    @State private var amount: Double = 0
+    
+    var body: some View {
+        return VStack {
+            Image("pexels-pixabay-68474")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 200)
+                .saturation(amount)
+                .blur(radius: (1 - amount) * 20)
+                
+            Slider(value: $amount)
+                .padding()
+        }
+    }
+    
 }
