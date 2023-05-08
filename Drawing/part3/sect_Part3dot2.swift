@@ -33,6 +33,11 @@ struct sect_Part3dot2_Previews: PreviewProvider {
 struct Trapezoid: Shape {
     var insetAmount:Double
     
+    var animatableData: Double {
+        get { insetAmount }
+        set { insetAmount = newValue }
+    }
+    
     func path(in rect: CGRect) -> Path {
         var path:Path = Path()
         
