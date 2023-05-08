@@ -26,9 +26,9 @@ ___
 ## Part 3
 ### [https://www.hackingwithswift.com/100/swiftui/45](https://www.hackingwithswift.com/100/swiftui/45)
 
-- [ ] 1. Special effects in SwiftUI: blurs, blending, and more
-    - WIP
+- [x] 1. Special effects in SwiftUI: blurs, blending, and more
 - [ ] 2. Animating simple shapes with animatableData
+    - WIP
 - [ ] 3. Animating complex shapes with AnimatablePair
 
 - [ ] 4. Creating a spirograph with SwiftUI
