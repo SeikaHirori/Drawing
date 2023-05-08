@@ -15,8 +15,10 @@ struct sect_Part3dot2: View {
             Trapezoid(insetAmount: insetAmount)
                 .frame(width: 200, height: 100)
                 .onTapGesture {
-                    insetAmount = Double.random(in: 10...90)
-                    print("Inset amount: \(insetAmount)")
+                    withAnimation {
+                        insetAmount = Double.random(in: 10...90)
+                        print("Inset amount: \(insetAmount)")
+                    }
                 }
         }
     }
