@@ -28,9 +28,10 @@ ___
 
 - [x] 1. Special effects in SwiftUI: blurs, blending, and more
 - [x] 2. Animating simple shapes with animatableData
-- [ ] 3. Animating complex shapes with AnimatablePair
-    - WIP
+- [x] 3. Animating complex shapes with AnimatablePair
 
 - [ ] 4. Creating a spirograph with SwiftUI
     - This is a bonus :3
+        - WIP
+
 
