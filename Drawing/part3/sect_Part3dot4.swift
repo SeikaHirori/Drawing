@@ -52,7 +52,17 @@ struct Spriograph: Shape {
     }
     
     func path(in rect: CGRect) -> Path {
-        let
+        
+        // Part 1
+        
+        let divisor:Int = gcd(innerRadius, outerRadius)
+        let outerRadius: Double = Double(self.outerRadius)
+        let innerRadius: Double = Double(self.innerRadius)
+        let distance: Double = Double(self.distance)
+        let difference: Double = innerRadius - outerRadius
+        let endPoint:Double = ceil(2 * Double.pi * outerRadius / Double(divisor)) * amount
+        
+        // Part 2
     }
     
     
