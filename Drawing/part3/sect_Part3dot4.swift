@@ -63,6 +63,25 @@ struct Spriograph: Shape {
         let endPoint:Double = ceil(2 * Double.pi * outerRadius / Double(divisor)) * amount
         
         // Part 2
+        var path: Path = Path()
+        
+        for theta in stride(from: 0, through: endPoint, by: 0.01) {
+            var x = difference * cos(theta) + distance * cos(difference / outerRadius * theta)
+            var y = difference * sin(theta) - distance * sin(difference / outerRadius * theta)
+            
+            x += rect.width / 2
+            y += rect.height / 2
+            
+            if theta == 0 {
+                path.move(to: CGPoint(x: x, y: y))
+            } else {
+                path.addLine(to: CGPoint(x: x, y: y))
+            }
+            
+        }
+        
+        
+        return path
     }
     
     
