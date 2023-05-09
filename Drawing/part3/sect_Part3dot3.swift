@@ -14,6 +14,8 @@ struct sect_Part3dot3: View {
     var body: some View {
 
         return VStack {
+            Text("Hello world :3")
+            
             Checkboard(rows: rows, columns: columns)
                 .onTapGesture {
                     withAnimation(.linear(duration: 3)) {
@@ -43,9 +45,20 @@ struct Checkboard: Shape {
         let columnSize: Double = rect.width / Double(columns)
         
         // loop over all rows and columns, making alternating squares colored
-        
-        
-        
+        for row in 0..<rows {
+            for column in 0..<columns {
+                if (row + column).isMultiple(of: 2) {
+                    
+                    // this square should be colored; add a rectangle here
+                    let startX: Double = columnSize * Double(column)
+                    let startY: Double = rowSize * Double (row)
+                    
+                    let rect = CGRect(x: startX, y: startY, width: columnSize, height: rowSize)
+                    
+                    path.addRect(rect)
+                }
+            }
+        }
         
         return path
     }
