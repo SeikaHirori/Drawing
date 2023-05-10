@@ -27,7 +27,27 @@ struct sect_Part3dot4: View {
             Spacer()
             
             Group {
-                Text("Hello world :3")
+//                let paddingPositionForSliders: [Edge.Set] = [.horizontal, .bottom]
+                
+                Text("Inner radius: \(Int(innerRadius))")
+                Slider(value: $innerRadius, in: 10...150, step: 1)
+                    .padding([.horizontal, .bottom])
+                
+                Text("Outer radius: \(Int(outerRadius))")
+                Slider(value: $outerRadius, in: 10...150, step: 1)
+                    .padding([.horizontal, .bottom])
+                
+                Text("Distance: \(Int(distance))")
+                Slider(value: $distance, in: 1...150, step: 1)
+                    .padding([.horizontal, .bottom])
+                
+                Text("Amount: \(amount, format: .number.precision(.fractionLength(2)))")
+                Slider(value: $amount)
+                    .padding([.horizontal, .bottom])
+                
+                Text("Colour")
+                Slider(value: $hue)
+                    .padding(.horizontal)
             }
         }
     }
