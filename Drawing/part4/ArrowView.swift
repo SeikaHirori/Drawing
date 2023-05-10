@@ -19,7 +19,7 @@ struct ArrowView: View {
             }
             Spacer()
             
-            Arrow(insetAmount: insetAmount)
+            ArrowTriangle(insetAmount: insetAmount)
         }
     }
 }
@@ -30,7 +30,7 @@ struct ArrowView_Previews: PreviewProvider {
     }
 }
 
-struct Arrow: Shape {
+struct ArrowTriangle: Shape {
     var insetAmount: Double
     
     var animatableData: Double {
@@ -44,11 +44,11 @@ struct Arrow: Shape {
         
 //        path.move(to: CGPoint(x: 0, y: rect.maxY))
         
-        path.move(to: CGPoint(x: rect.width / 2, y: 100))
+        path.move(to: CGPoint(x: rect.width / 2, y: rect.minY))
         
-        path.addLine(to: CGPoint(x: insetAmount, y: 300))
-        path.addLine(to: CGPoint(x: rect.width - insetAmount, y: 300))
-        path.addLine(to: CGPoint(x: rect.width / 2, y: 100))
+        path.addLine(to: CGPoint(x: insetAmount, y: rect.midY / 2))
+        path.addLine(to: CGPoint(x: rect.width - insetAmount, y: rect.midY / 2))
+        path.addLine(to: CGPoint(x: rect.width / 2, y: rect.minY))
 
         
         
