@@ -17,10 +17,18 @@ struct sect_Part3dot4: View {
     
     
     var body: some View {
-        return VStack {
-            Text("Hello, World!")
+        return VStack(spacing: 0) {
+            Spacer()
             
             Spriograph(innerRadius: Int(innerRadius), outerRadius: Int(outerRadius), distance: Int(distance), amount: amount)
+                .stroke(Color(hue: hue, saturation: 1, brightness: 1), lineWidth: 1)
+                .frame(width: 300, height: 300)
+            
+            Spacer()
+            
+            Group {
+                Text("Hello world :3")
+            }
         }
     }
 }
