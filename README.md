@@ -30,8 +30,15 @@ ___
 - [x] 2. Animating simple shapes with animatableData
 - [x] 3. Animating complex shapes with AnimatablePair
 
-- [ ] 4. Creating a spirograph with SwiftUI
+- [x] 4. Creating a spirograph with SwiftUI
     - This is a bonus :3
-        - WIP
 
+## Part 4
+### [https://www.hackingwithswift.com/books/ios-swiftui/drawing-wrap-up](https://www.hackingwithswift.com/books/ios-swiftui/drawing-wrap-up)
 
+- [ ] 1. Create an Arrow shape – having it point straight up is fine. This could be a rectangle/triangle-style arrow, or perhaps three lines, or maybe something else depending on what kind of arrow you want to draw.
+    - Note:
+        - Create a separate triangle and rectangle to create an arrow
+    - WIP
+- [ ] 2. Make the line thickness of your Arrow shape animatable.
+- [ ] 3. Create a ColorCyclingRectangle shape that is the rectangular cousin of ColorCyclingCircle, allowing us to control the position of the gradient using one or more properties.
