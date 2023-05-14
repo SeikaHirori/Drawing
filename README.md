@@ -43,3 +43,4 @@ ___
     - WIP
 - [ ] 2. Make the line thickness of your Arrow shape animatable.
 - [ ] 3. Create a ColorCyclingRectangle shape that is the rectangular cousin of ColorCyclingCircle, allowing us to control the position of the gradient using one or more properties.
+    - Sample code of ColorCyclingCircle can be found in section 2.3
